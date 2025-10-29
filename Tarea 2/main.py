@@ -16,7 +16,10 @@ def parse_grammar(lines):
         parts = line.strip().split('->')
         nonterminal = parts[0].strip()
         productions = parts[1].strip().split()
-        grammar[nonterminal] = productions
+        # Acumular producciones si el no terminal aparece en varias líneas
+        if nonterminal not in grammar:
+            grammar[nonterminal] = []
+        grammar[nonterminal].extend(productions)
     return grammar
 
 
@@ -195,5 +198,5 @@ def main():
             print()  # Blank line between cases
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
