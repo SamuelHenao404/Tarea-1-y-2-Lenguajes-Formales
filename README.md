@@ -74,13 +74,6 @@ Formato de entrada:
 
 Salida: las producciones resultantes sin recursión por la izquierda para cada caso, en el formato `A -> ...` (casos separados por una línea en blanco).
 
----
 
-### Observaciones
-
-- En `Tarea 2`, las instrucciones del `readme2.md` mencionan `left_recursion.py`, pero el archivo ejecutable del proyecto es `main.py`.
-- Si necesitas ejemplos completos y explicación detallada, consulta los readmes dentro de cada carpeta.
-
----
 
 
