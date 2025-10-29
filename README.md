@@ -13,11 +13,19 @@ Samuel Henao Castrillón — David Quintero Gallego.
 - `Tarea 1/`
   - `main.py`: implementación del algoritmo de minimización de DFA.
   - `input.txt`: ejemplo de entrada con varios casos.
-  - `Readme.md` y `readme_assignment_1.md`: descripción detallada (en inglés).
+
 - `Tarea 2/`
   - `main.py`: implementación de eliminación de recursión por la izquierda.
   - `input.txt`: ejemplo de entrada con varios casos.
-  - `readme2.md`: descripción detallada (en inglés).
+
+
+---
+
+### Objetivos de aprendizaje
+
+- Comprender y aplicar el algoritmo de minimización de DFA por llenado de tabla.
+- Transformar gramáticas para eliminar recursión por la izquierda siguiendo el método clásico (Aho).
+- Practicar lectura y escritura de formatos de entrada/salida estrictos en problemas de compiladores.
 
 ---
 
@@ -52,6 +60,18 @@ Formato de entrada (por caso):
 - Una línea con los estados finales separados por espacios (puede estar vacía).
 - `n` líneas con la tabla de transición, con o sin id de estado al inicio.
 
+Ejemplo mínimo:
+
+```
+1
+3
+a b
+1
+0 1 2
+1 1 2
+2 2 2
+```
+
 #### Tarea 2 — Eliminación de Recursión por la Izquierda
 
 Desde la carpeta `Tarea 2/`:
@@ -73,6 +93,21 @@ Formato de entrada:
   - `k` líneas con producciones en la forma `A -> ...` separadas por espacios.
 
 Salida: las producciones resultantes sin recursión por la izquierda para cada caso, en el formato `A -> ...` (casos separados por una línea en blanco).
+
+Ejemplo mínimo:
+
+```
+1
+1
+S -> Sa b
+```
+
+Salida esperada (esquema):
+
+```
+S -> bA
+A -> aA e
+```
 
 
 
